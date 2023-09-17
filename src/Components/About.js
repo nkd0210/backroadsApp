@@ -1,21 +1,22 @@
 import React from 'react'
+import about_img from '../images/about.jpeg'
+import Title from './Title'
+
 
 function About() {
     return (
-        <section class="section" id="about">
-            <div class="section-title">
-                <h2>about <span>us</span></h2>
-            </div>
+        <section className="section" id="about">
+            <Title title='about' subTitle='us' />
 
-            <div class="section-center about-center">
-                <div class="about-img">
+            <div className="section-center about-center">
+                <div className="about-img">
                     <img
-                        src="./images/about.jpeg"
-                        class="about-photo"
+                        src={about_img}
+                        className="about-photo"
                         alt="awesome beach"
                     />
                 </div>
-                <article class="about-info">
+                <article className="about-info">
                     <h3>explore the difference</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -27,7 +28,7 @@ function About() {
                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
                         unde dolor?
                     </p>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" className="btn">read more</a>
                 </article>
             </div>
         </section>
